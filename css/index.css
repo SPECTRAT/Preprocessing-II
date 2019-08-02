@@ -181,12 +181,25 @@ nav {
   width: 65%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 5px;
+    width: 100%;
+  }
+}
 nav .nav-links {
   font-size: 1.6rem;
   padding-top: 1.5%;
   width: 40%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  nav .nav-links {
+    width: 100%;
+  }
 }
 nav .nav-links a {
   text-decoration: none;
@@ -210,6 +223,11 @@ nav .nav-links a {
 }
 .home header img {
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home header {
+    width: 90%;
+  }
 }
 .home .content-section {
   border-top: 2px dashed #C0C0C0;
