@@ -176,9 +176,6 @@ hr {
   border-top: 2px dashed #C0C0C0;
   margin-bottom: -1.5px;
 }
-a {
-  text-decoration: none;
-}
 nav {
   display: flex;
   justify-content: space-between;
@@ -373,4 +370,11 @@ nav .nav-links a {
   cursor: pointer;
   background-color: #d0e45e;
   color: #e26218;
+}
+.sch-container {
+  width: 65%;
+  margin: 0 auto;
+}
+.booking-form {
+  margin-top: 30px;
 }
