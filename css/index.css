@@ -164,16 +164,18 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 nav {
   display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: 0 auto;
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
@@ -182,11 +184,17 @@ nav {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home header {
+  width: 65%;
+  margin: 0 auto;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 65%;
+  margin: 0 auto;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -212,13 +220,15 @@ nav {
   padding-left: 0;
 }
 .home .content-destination {
-  width: 75%;
+  width: 50%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
 }
 .home .content-pick {
+  width: 65%;
+  margin: 0 auto;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
