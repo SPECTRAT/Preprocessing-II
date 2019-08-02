@@ -296,6 +296,11 @@ nav .nav-links a {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 90%;
+  }
+}
 .home .content-pick {
   width: 65%;
   margin: 0 auto;
@@ -304,9 +309,22 @@ nav .nav-links a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    width: 85%;
+    padding-bottom: 15px;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+    margin: 15px auto;
+  }
 }
 .home .content-pick .destination .btn1 {
   background-color: #17A2B8;

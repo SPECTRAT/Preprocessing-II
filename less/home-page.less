@@ -71,6 +71,9 @@
     img {
       border-radius: 10px;
     }
+    @media @mobile {
+      width: 90%;
+    }
   }
 
   .content-pick {
@@ -79,11 +82,18 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile {
+      flex-direction: column;
+      width: 85%;
+      padding-bottom: 15px;
+    }
     .destination {
       width: 30%;
       margin-bottom: @spacing;
-      
+      @media @mobile {
+        width: 90%;
+        margin: 15px auto;
+      }
       .btn1{
           .buttons(rgb(101, 165, 88), rgb(52, 56, 17));
         }
