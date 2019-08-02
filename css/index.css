@@ -176,6 +176,9 @@ hr {
   border-top: 2px dashed #C0C0C0;
   margin-bottom: -1.5px;
 }
+a {
+  text-decoration: none;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -369,5 +372,5 @@ nav .nav-links a {
 .home .content-pick .destination .btn3:hover {
   cursor: pointer;
   background-color: #d0e45e;
-  color: #52280f;
+  color: #e26218;
 }
