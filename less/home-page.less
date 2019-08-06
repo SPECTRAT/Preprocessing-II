@@ -1,21 +1,43 @@
 .home {
-
+  
+  header {
+    .container-width();
+    img {
+      margin-bottom: @spacing;
+    }
+    padding-bottom: @spacing - 10px;
+    @media @mobile {
+      width: 90%;
+    }
+  }
   .content-section {
+    .border-dash();
+    padding-top: @spacing;
+    padding-bottom: @spacing;
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    .container-width();
+    @media @mobile {
+      flex-direction: column;
+      width: 90%;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        .mobile-width();
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .mobile-width();
+      }
 
       img {
         border-radius: 10px;
@@ -24,12 +46,16 @@
   }
 
   .inverse-content {
-    padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    padding-bottom: 20px;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
     }
 
     .img-content {
@@ -39,23 +65,45 @@
   }
 
   .content-destination {
-    width: 75%;
+    padding-top: @spacing;
+    width: 50%;
     margin: 0 auto 30px;
-
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      width: 90%;
     }
   }
 
   .content-pick {
-    padding-top: 30px;
+    .container-width();
+    padding-top: @spacing;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @mobile {
+      flex-direction: column;
+      width: 85%;
+      padding-bottom: 15px;
+    }
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: @spacing;
+      @media @mobile {
+        width: 90%;
+        margin: 15px auto;
+      }
+      .btn1{
+          .buttons(rgb(101, 165, 88), rgb(52, 56, 17));
+        }
+        .btn2{
+          .buttons(rgb(24, 70, 56), rgb(129, 79, 79));
+        }
+        .btn3{
+          .buttons(rgb(208, 228, 94), rgb(226, 98, 24));
+        }
+      
     }
   }
 }// home
